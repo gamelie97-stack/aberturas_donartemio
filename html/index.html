@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aberturas Don Artemio | Calidad en Puertas</title>
+    <style>
+        /* Estilos generales */
+        :root {
+            --verde-oscuro: #314432; /* Basado en los banners de tus imágenes */
+            --dorado: #d4af37;
+            --madera: #a05a2c;
+            --fondo: #f9f9f9;
+            --texto: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--fondo);
+            color: var(--texto);
+            line-height: 1.6;
+        }
+
+        /* Encabezado / Header */
+        header {
+            background-color: var(--verde-oscuro);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            border-bottom: 5px solid var(--dorado);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-family: 'Georgia', serif;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+        }
+
+        /* Sección Hero */
+        .hero {
+            background-color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+
+        .hero h2 {
+            color: var(--madera);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .destacado {
+            display: inline-block;
+            background-color: var(--verde-oscuro);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* Catálogo de Productos */
+        .contenedor {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .grid-productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding-bottom: 3rem;
+        }
+
+        .tarjeta-producto {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+            border: 1px solid #eaeaea;
+        }
+
+        .tarjeta-producto:hover {
+            transform: translateY(-10px);
+        }
+
+        .tarjeta-producto img {
+            width: 100%;
+            height: auto;
+            border-bottom: 3px solid var(--verde-oscuro);
+        }
+
+        .info-producto {
+            padding: 1.5rem;
+        }
+
+        .info-producto h3 {
+            color: var(--verde-oscuro);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            font-family: 'Georgia', serif;
+        }
+
+        .precio {
+            color: var(--madera);
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .nota {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .btn-comprar {
+            display: inline-block;
+            background-color: #25D366; /* Color WhatsApp */
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .btn-comprar:hover {
+            background-color: #128C7E;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Aberturas Don Artemio</h1>
+        <p>Fabricación y diseño de aberturas de alta calidad para tu hogar</p>
+    </header>
+
+    <section class="hero">
+        <h2>Renueva tus espacios con elegancia</h2>
+        <p>Fabricamos puertas con los mejores materiales del mercado.</p>
+        <br>
+        <span class="destacado">¡Todas nuestras puertas incluyen colocación al marco SIN COSTO!</span>
+    </section>
+
+    <main class="contenedor">
+        <div class="grid-productos">
+            
+            <div class="tarjeta-producto">
+                <img src="1.jpg" alt="Puerta Placa Ranurada">
+                <div class="info-producto">
+                    <p class="precio">Gs. 550.000</p>
+                    <p class="nota">Precio instalado al marco sin costo</p>
+                    <a href="https://wa.me/595900000000?text=Hola,%20me%20interesa%20la%20Puerta%20Placa%20Ranurada" class="btn-comprar" target="_blank">Consultar por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="2.jpg" alt="Puerta Tablero Elegance">
+                <div class="info-producto">
+                    <h3>Puerta Tablero Elegance</h3>
+                    <p class="precio">Gs. 1.450.000</p>
+                    <p class="nota">Con colocación al marco sin costo</p>
+                    <a href="https://wa.me/595982120369?text=Hola,%20me%20interesa%20la%20Puerta%20Tablero%20Elegance" class="btn-comprar" target="_blank">Consultar por WhatsApp</a>
+                </div>
+            </div>
+
+           <div class="tarjeta-producto">
+                <img src="3.jpg" alt="Puerta Tablero Minimalista">
+                <div class="info-producto">
+                    <h3>Puerta Tablero Minimalista</h3>
+                    <p class="precio">Gs. 1.600.000</p>
+                    <p class="nota">Con colocación al marco sin costo</p>
+                    <a href="https://wa.me/595900000000?text=Hola,%20me%20interesa%20la%20Puerta%20Tablero%20Minimalista" class="btn-comprar" target="_blank">Consultar por WhatsApp</a>
+                </div>
+            </div>
+
+          <div class="tarjeta-producto">
+                <img src="4.jpg" alt="Puerta Premium">
+                <div class="info-producto">
+                    <h3>Puerta Premium</h3>
+                    <p class="precio">Gs. 2.100.000</p>
+                    <p class="nota">Con colocación al marco sin costo</p>
+                    <a href="https://wa.me/595900000000?text=Hola,%20me%20interesa%20la%20Puerta%20Premium" class="btn-comprar" target="_blank">Consultar por WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <h2>Fabricación de Aberturas Don Artemio</h2>
+        <p>📍 Central, Paraguay</p>
+        <p>📞 Atención de Lunes a Sábados</p>
+        <br>
+        <p>&copy; 2026 Don Artemio. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
